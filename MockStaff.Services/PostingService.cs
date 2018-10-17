@@ -65,5 +65,12 @@ namespace MockStaff.Services
 				return query.ToArray();
 			}
 		}
+		//public PostingDetail GetPostingById(int id)
+		//{
+		//	using (var ctx = new ApplicationDbContext())
+		//	{
+		//		var entity = ctx .Postings .Single(e => e.PostingId == postingId)
+		//	}
+		//}
 	}
 }

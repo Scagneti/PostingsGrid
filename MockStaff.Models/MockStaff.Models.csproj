@@ -77,6 +77,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="PostingCreate.cs" />
+    <Compile Include="PostingDetail.cs" />
     <Compile Include="PostingListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
