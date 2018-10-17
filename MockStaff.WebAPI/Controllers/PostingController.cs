@@ -7,6 +7,7 @@ using System.Web.Http;
 
 namespace MockStaff.WebAPI.Controllers
 {
+	[Authorize]
     public class PostingController : ApiController
     {
     }

@@ -53,11 +53,12 @@ namespace MockStaff.Data
 			HasKey(iul => iul.UserId);
 		}
 	}
-	public class IdentityUserRoleConfiguration : EntityTypeConfiguration<IdentityUserRole>
+	public class IdentityUserRoleConfiguration
+			: EntityTypeConfiguration<IdentityUserRole>
 	{
 		public IdentityUserRoleConfiguration()
 		{
 			HasKey(iur => iur.RoleId);
-		}​
-    }
+		}
+	}
 }

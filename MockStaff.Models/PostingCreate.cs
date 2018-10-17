@@ -7,21 +7,15 @@ using System.Threading.Tasks;
 
 namespace MockStaff.Models
 {
-	public class PostingListItem
+	public class PostingCreate
 	{
-		public int PostingId { get; set; }
-		public string Title { get; set; }
-		public DateTimeOffset CreatedDate { get; set; }
 		public decimal? LowBid { get; set; }
+		public string Title { get; set; }
 		public bool IsUrgent { get; set; }
-		public string HiringManager { get; set; }
+		public string HiringManger { get; set; }
 		public PostingStatus Status { get; set; }
 		public DateTimeOffset ExpirationDate { get; set; }
 		public PositionType PositionType { get; set; }
 		public string CreatedBy { get; set; }
-		public override string ToString()
-		{
-			return base.ToString();
-		}
 	}
 }

@@ -20,16 +20,16 @@ namespace MockStaff.Data
 		StaffAug,
 
 	}
-    public class Postings
+    public class Posting
     {
 		[Key]
 		public int PostingId { get; set; }
-		[Required]
+	
 		public Guid OwnerId { get; set; }
-		[Required]
+
 		public DateTimeOffset CreatedDate { get; set; }
-		[Required]
-		public decimal LowBid { get; set; }
+		
+		public decimal? LowBid { get; set; }
 		[Required]
 		public string Title { get; set; }
 		[Required]

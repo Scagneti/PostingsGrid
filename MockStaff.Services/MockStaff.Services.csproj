@@ -75,12 +75,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="PostingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MockStaff.Data\MockStaff.Data.csproj">
+      <Project>{07440549-7443-4a0b-b107-8297d4d8c920}</Project>
+      <Name>MockStaff.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MockStaff.Models\MockStaff.Models.csproj">
+      <Project>{edd4cdf8-08a0-4d29-b5a9-3da708e9b109}</Project>
+      <Name>MockStaff.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
