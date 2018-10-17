@@ -75,6 +75,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BidService.cs" />
     <Compile Include="PostingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

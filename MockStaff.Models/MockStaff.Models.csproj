@@ -75,6 +75,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BidCreate.cs" />
+    <Compile Include="BidDetails.cs" />
+    <Compile Include="BidEdit.cs" />
+    <Compile Include="BidListItem.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="PostingCreate.cs" />
     <Compile Include="PostingDetail.cs" />

@@ -75,13 +75,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bid.cs" />
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Migrations\201810171732428_InitialCreate.cs" />
+    <Compile Include="Migrations\201810171732428_InitialCreate.Designer.cs">
+      <DependentUpon>201810171732428_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810171929303_AddedBid.cs" />
+    <Compile Include="Migrations\201810171929303_AddedBid.Designer.cs">
+      <DependentUpon>201810171929303_AddedBid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810171940571_AddedGuid.cs" />
+    <Compile Include="Migrations\201810171940571_AddedGuid.Designer.cs">
+      <DependentUpon>201810171940571_AddedGuid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Posting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201810171732428_InitialCreate.resx">
+      <DependentUpon>201810171732428_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810171929303_AddedBid.resx">
+      <DependentUpon>201810171929303_AddedBid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810171940571_AddedGuid.resx">
+      <DependentUpon>201810171940571_AddedGuid.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

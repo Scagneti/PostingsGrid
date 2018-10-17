@@ -32,7 +32,9 @@ namespace MockStaff.Data
         {
             return new ApplicationDbContext();
         }
+
 		public DbSet<Posting> Postings { get; set; }
+		public DbSet<Bid> Bids { get; set; }
 
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{
