@@ -342,6 +342,14 @@
       <Project>{07440549-7443-4A0B-B107-8297D4D8C920}</Project>
       <Name>MockStaff.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MockStaff.Models\MockStaff.Models.csproj">
+      <Project>{EDD4CDF8-08A0-4D29-B5A9-3DA708E9B109}</Project>
+      <Name>MockStaff.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MockStaff.Services\MockStaff.Services.csproj">
+      <Project>{3CEEF8A4-4B0B-4615-A34C-D27BEFFD6A80}</Project>
+      <Name>MockStaff.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

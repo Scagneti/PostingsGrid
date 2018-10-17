@@ -94,7 +94,7 @@ namespace MockStaff.Services
 				entity.Title = model.Title;
 				entity.LowBid = model.LowBid;
 				entity.IsUrgent = model.IsUrgent;
-				entity.HiringManager = model.HiringManger;
+				entity.HiringManager = model.HiringManager;
 				entity.Status = model.Status;
 				entity.ExpirationDate = model.ExpirationDate;
 				entity.PositionType = model.PositionType;
@@ -104,7 +104,7 @@ namespace MockStaff.Services
 			}
 
 		}
-		public bool DeleteNote(int postingId)
+		public bool DeletePosting(int postingId)
 		{
 			using (var ctx = new ApplicationDbContext())
 			{
