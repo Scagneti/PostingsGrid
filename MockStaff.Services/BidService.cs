@@ -31,8 +31,7 @@ namespace MockStaff.Services
 							{
 								BidId = e.BidId,
 								PostingId = e.PostingId,
-								PayRate = e.PayRate,
-								PostingTitle = e.Posting.Title
+								PayRate = e.PayRate
 							});
 				return query.ToArray();
 			}
