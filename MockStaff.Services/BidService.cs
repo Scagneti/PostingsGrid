@@ -37,6 +37,19 @@ namespace MockStaff.Services
 				return query.ToArray();
 			}
 		}
+		public BidDetails GetBidById(int id)
+		{
+			using (var ctx = new ApplicationDbContext())
+			{
+				var entity = ctx.Bids.Single(e => e.BidId == id && e.OwnerId == _userId);
+				return new BidDetails
+				{
+					BidId = entity.BidId,
+					PayRate = entity.PayRate,
+					PostingId = entity.PostingId
+				};
+			}
+		}
 		public bool CreateBid(BidCreate model)
 		{
 			var entity = new Bid()
